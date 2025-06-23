@@ -1,0 +1,33 @@
+    /* --- Content Container (for logo and text) --- */
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      opacity: 1;
+      animation: fadeInMoveUp 2s ease-out forwards;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* --- Fade-in & Move-up Animation --- */
+    @keyframes fadeInMoveUp {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    /* --- Logo Styles --- */
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 220px;
+      height: auto;
+      opacity: 0.9;
+    }
